@@ -16,6 +16,8 @@ def create_db(server, database):
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db = SQLAlchemy(app)
 
+    # TODO: abstract
+    # standardized tables
     class CleanShipment(db.Model):
         __tablename__ = 'clean_shipments'
         id = db.Column(db.String(255), primary_key=True)

@@ -12,8 +12,8 @@ import flask_init_db as help
 # currently doesn't run SQL create database [database];
 db = help.create_db(server, database)
 
-class NewRecordType(db.Model): # class named after value to store
-    __tablename__ = 'new_record_type_table' # SQL table name
+class RawShipment(db.Model): # class named after value to store
+    __tablename__ = 'raw_shipments' # SQL table name
     id = db.Column(db.String(255), primary_key=True) # required
     column_one = db.Column(db.String(50))
     column_two = db.Column(db.String(50))
