@@ -3,14 +3,14 @@ Simple flask app for initializing sqlalchemy db models.
 
 ## Instructions:
 1. ```git clone [this repo]```
-2. ```pip install -e .```
-3. ```pip install -r requirements.txt```
+2. ```pip install -e ./[cloned repo]```
+3. ```pip install -r ./[cloned repo]/requirements.txt```
 
 ```python
-import flask_init_db as help
+import flask_init_db as helper
 
 # currently doesn't run SQL create database [database];
-db = help.create_db(server, database)
+db = helper.create_db(server, database)
 
 class RawShipment(db.Model): # class named after value to store
     __tablename__ = 'raw_shipments' # SQL table name

@@ -20,7 +20,7 @@ def create_db(server, database):
     # standardized tables
     class CleanShipment(db.Model):
         __tablename__ = 'clean_shipments'
-        id = db.Column(db.String(255), primary_key=True)
+        id = db.Column(db.Integer, primary_key=True)
         route_id = db.Column(db.String(255))
         stop_id = db.Column(db.String(255))
         order_id = db.Column(db.String(255))
