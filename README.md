@@ -1,4 +1,4 @@
-# flask-db-init
+# flask-init-db
 Simple flask app for initializing sqlalchemy db models.
 
 ## Instructions:
